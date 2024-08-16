@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grau</title>
+    <script>
+        function calc(){
+            var grau = document.querySelectorAll('input')[0].value
+            var resultado = (grau*1.8)+32
+            alert('a temperatura em fahrenheit é ' + resultado + '°')
+        }
+    </script>
+</head>
+<body>
+    <h1>Transforme Celsius para fahrenheit</h1>
+    <input type="number" placeholder="insira a temperatura em Celsius">
+    <input type="submit" value="calcular" onclick="calc()">
+
+</body>
+</html>

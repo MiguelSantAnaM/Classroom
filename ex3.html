@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <script>
+        function calc(){
+            var prod = document.querySelectorAll('input')[0].value
+            var desc = document.querySelectorAll('input')[1].value
+            var desconto = desc/100
+            var resultad = prod*desconto
+            var resultado = prod - resultad
+            alert('o valor do produto com desconto é ' + resultado + 'R$')
+        }
+    </script>
+</head>
+<body>
+    <h1>Vamos calcular o valor de um produto com desconto</h1>
+    <input type="number" placeholder="insira o valor do produto(R$)">
+    <input type="number" placeholder="insira o valor do desconto(%)">
+    <input type="submit" value="calcular" onclick="calc()">
+
+</body>
+</html>

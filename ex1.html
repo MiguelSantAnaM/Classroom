@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retângulo</title>
+    <script>
+        function calc(){
+            var alt = document.querySelectorAll('input')[0].value
+            var base = document.querySelectorAll('input')[1].value
+            var resultado = alt*base
+            alert('a área deste retângulo é ' + resultado + 'cm²')
+        }
+    </script>
+</head>
+<body>
+    <h1>Vamos calcular a área de um retângulo</h1>
+    <input type="number" placeholder="insira a altura(cm)">
+    <input type="number" placeholder="insira a base(cm)">
+    <input type="submit" value="calcular" onclick="calc()">
+
+</body>
+</html>
